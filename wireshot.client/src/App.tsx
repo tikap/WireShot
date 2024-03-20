@@ -3,14 +3,16 @@ import BouncyCircle from './animated/BouncyCircle';
 
 function App() {
     return (
-        <>
-            <div>
+        <div className="grid-container">
+            <div className="grid-item">
                 <h1 id="tabelLabel">WireShot</h1>
                 <p>Animated communication protocols</p>
             </div>
 
-            <BouncyCircle duration={5000} />
-        </>
+            <div className="grid-item">
+                <BouncyCircle duration={3000} />
+            </div>
+        </div>
     );
 }
 

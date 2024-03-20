@@ -15,7 +15,7 @@ export default function BouncyCircle({ duration }) {
             parent: animDom.current,
             shape: "circle",
             fill: { "#FC46AD": "#F64040" },
-            radius: { 50: 200 },
+            radius: { 25: 50 },
             duration: duration,
             isShowStart: true,
             easing: "elastic.inout",
@@ -30,6 +30,7 @@ export default function BouncyCircle({ duration }) {
 
     useEffect(() => {
         if (!bouncyCircle.current) return;
+
         bouncyCircle.current.tune({ duration: duration });
         bouncyCircle.current.replay();
         isOpen
