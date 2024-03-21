@@ -4,33 +4,3 @@
     padding: 2rem;
     text-align: center;
 }
-
-tr:nth-child(even) {
-    background: #000000;
-}
-
-tr:nth-child(odd) {
-    background: #000000;
-}
-
-th, td {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
-    column-gap: 10px;
-    row-gap: 1px;
-}
-
-.grid-item {
-    box-sizing: content-box;
-    width: 100%;
-    border: 2px solid #f76707;
-    border-radius: 5px;
-    padding: 10px;
-    align-content: space-around;
-}
